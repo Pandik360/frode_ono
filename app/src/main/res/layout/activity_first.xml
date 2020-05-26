@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".First_activity">
+
+    <Button
+        android:id="@+id/but1"
+
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="25dp"
+
+        android:autoText="true"
+        android:background="@drawable/heart_button"
+        android:text="t°С"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but2" />
+
+    <Button
+        android:id="@+id/but3"
+
+        android:layout_width="162dp"
+        android:layout_height="54dp"
+
+        android:layout_marginTop="25dp"
+        android:autoText="true"
+        android:background="@drawable/but2"
+        android:text="Comands"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but1" />
+
+    <Button
+        android:id="@+id/but2"
+
+        android:layout_width="85dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="25dp"
+
+        android:autoText="true"
+        android:backgroundTint="#A2A0A0"
+        android:foreground="@android:drawable/ic_lock_power_off"
+        android:textColor="#A2A0A0"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="416dp"
+        android:layout_height="260dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/black_arm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

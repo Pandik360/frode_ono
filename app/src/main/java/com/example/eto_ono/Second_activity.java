@@ -35,6 +35,9 @@ public class Second_activity extends AppCompatActivity {
         view_temp.setText("0°C");
         startTimer();
 
+
+
+
     }
 
     private void setValue(TextView textView, String str){

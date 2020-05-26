@@ -17,7 +17,7 @@ public class Graf_activity extends AppCompatActivity {
         setContentView(R.layout.activity_graf_activity);
 
         AnyChartView anyChartView = findViewById(R.id.any_chart_view);
-        //anyChartView.setProgressBar(findViewById(R.id.progress_bar));
+        anyChartView.setProgressBar(findViewById(R.id.progress_bar));
 
         Cartesian3d area3d = AnyChart.area3d();
         area3d.xAxis(0).labels().format("${%Value}");

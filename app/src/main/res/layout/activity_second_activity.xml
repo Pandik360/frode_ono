@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="#edeef0"
+
     tools:context=".Second_activity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+
         android:layout_width="369dp"
         android:layout_height="701dp"
         android:background="@drawable/corners_for_2"
         android:backgroundTint="#FFFFFF"
+        android:elevation="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,9 +60,14 @@
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_borders"
+            android:backgroundTint="#2340E9"
+            android:drawableRight="@drawable/ic_iconsvg"
             android:text="Графики"
+            android:textColor="@color/colorAccent"
+            android:textSize="11pt"
             app:layout_constraintBottom_toTopOf="@+id/textView4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

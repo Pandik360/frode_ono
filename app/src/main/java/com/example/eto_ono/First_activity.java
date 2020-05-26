@@ -36,13 +36,13 @@ public class First_activity extends AppCompatActivity
             {
                 if(bluetooth.isEnabled())
                 {
-                    Toast.makeText(getApplicationContext(), "Bluetooth is off!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Bluetooth выключен!", Toast.LENGTH_LONG).show();
                     bluetooth.disable();
                 }
                 else
                 {
                     bluetooth.enable();
-                    Toast.makeText(getApplicationContext(), "Bluetooth is on!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Bluetooth включён!", Toast.LENGTH_LONG).show();
                 }
 
             }

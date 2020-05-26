@@ -5,70 +5,76 @@
     android:id="@+id/view2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="#edeef0"
     tools:context=".First_activity">
 
-    <Button
-        android:id="@+id/but1"
+    <androidx.constraintlayout.widget.ConstraintLayout
 
-        android:layout_width="145dp"
-        android:layout_height="145dp"
-        android:layout_marginTop="25dp"
-
-        android:autoText="true"
-        android:background="@drawable/heart_button"
-        android:text="t°С"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#FFFFFF"
-        android:textSize="50sp"
+        android:layout_width="369dp"
+        android:layout_height="701dp"
+        android:background="@drawable/corners_for_2"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/but2" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/but3"
+        <Button
+            android:id="@+id/but1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_borders"
+            android:backgroundTint="#2340E9"
+            android:drawableLeft="@drawable/temperature_celsius_icon_137115"
+            android:drawableRight="@drawable/heart_button"
+            android:drawableTint="#FFFFFF"
+            android:text="Датчики"
+            android:textColor="@color/colorAccent"
+            android:textSize="11pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        android:layout_width="162dp"
-        android:layout_height="54dp"
+        <Button
+            android:id="@+id/but2"
 
-        android:layout_marginTop="25dp"
-        android:autoText="true"
-        android:background="@drawable/but2"
-        android:text="Comands"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/but1" />
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_borders"
+            android:backgroundTint="#2340E9"
+            android:drawableLeft="@android:drawable/ic_lock_power_off"
+            android:drawableRight="@android:drawable/ic_lock_power_off"
+            android:drawableTint="#FFFFFF"
+            android:text="Bluetooth"
+            android:textColor="@color/colorAccent"
+            android:textSize="11pt"
+            app:layout_constraintBottom_toTopOf="@+id/but1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/but2"
+        <Button
+            android:id="@+id/but3"
 
-        android:layout_width="85dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_borders"
+            android:backgroundTint="#2340E9"
+            android:drawableLeft="@android:drawable/ic_menu_manage"
+            android:drawableRight="@android:drawable/ic_menu_manage"
+            android:drawableTint="#FFFFFF"
+            android:text="Команды"
+            android:textColor="@color/colorAccent"
+            android:textSize="11pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/but1" />
 
-        android:autoText="true"
-        android:backgroundTint="#A2A0A0"
-        android:foreground="@android:drawable/ic_lock_power_off"
-        android:textColor="#A2A0A0"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="416dp"
-        android:layout_height="260dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/black_arm"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

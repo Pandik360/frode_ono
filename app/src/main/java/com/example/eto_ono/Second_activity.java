@@ -3,6 +3,8 @@ package com.example.eto_ono;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.Timer;
@@ -17,7 +19,13 @@ public class Second_activity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_activity);
+        Button butgraf = findViewById(R.id.button5);
+        butgraf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
         view_heart.setText("0");
         view_temp.setText("0°C");
 

@@ -10,8 +10,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
-        android:layout_width="369dp"
-        android:layout_height="701dp"
+        android:layout_width="331dp"
+        android:layout_height="656dp"
         android:background="@drawable/corners_for_2"
         android:backgroundTint="#FFFFFF"
         android:elevation="28dp"
